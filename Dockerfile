@@ -13,6 +13,9 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 RUN python -m pip install --upgrade \
         pip && \
     python -m pip install \
+        setuptools \
+        wheel && \
+    python -m pip install \
         networkx==1.1 && \
     python -m pip cache purge
 
