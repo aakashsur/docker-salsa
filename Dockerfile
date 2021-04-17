@@ -19,8 +19,8 @@ RUN python -m pip install --upgrade \
         networkx==1.1 && \
     python -m pip cache purge
 
-RUN cd ~ \
-    git https://github.com/marbl/SALSA.git && \
+RUN cd ~ && \
+    git clone https://github.com/marbl/SALSA.git && \
     cd SALSA && \
     make && \
     ln -s /root/SALSA/run_pipeline.py /root/SALSA/salsa 
