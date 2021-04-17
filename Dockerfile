@@ -6,7 +6,9 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
         python2 \
         python-pip \
         libboost-graph-dev \
-        git && \
+        git \
+        make 
+        g++ && \
     apt-get autoremove && \
     apt-get clean
     
