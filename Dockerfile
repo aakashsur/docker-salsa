@@ -18,6 +18,7 @@ RUN python -m pip install --upgrade \
         setuptools \
         wheel && \
     python -m pip install \
+        numpy \
         networkx==1.1 && \
     python -m pip cache purge
 
