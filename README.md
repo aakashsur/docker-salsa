@@ -37,7 +37,7 @@ docker run \
 
 # Details
 
-  The `salsa` command has been placed in $PATH. Salsa requires an index of the assembly, and a conversion of the alignment bam file into a bed file. Once those are in place, you can run the command and scaffold your assembly.
+  The `salsa` command has been placed in $PATH. Salsa requires an index of the assembly, and a conversion of the alignment bam file into a bed file. Once those are in place, you can run the command and scaffold your assembly. Please note that the current docker build is failing, and though a working container is in the repository. It seems that python2 end of life is finally here so I can't install pip for python2 and get all these old packages for the "newer" builds of Salsa. upda
 
   To build from scratch - 
 
