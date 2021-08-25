@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:buster
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
